@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+p{
+    text-align: center;
+    color:red;
+    text-decoration: blink;
+ }
+
+table1 {
+        border-style: line;
+}
+
+ border: 1px solid gray;
+}
+#choose { 
+    font-weight:bold; 
+  }
+h1{
+    text-align: center;
+    padding-left: 25px;
+}
+label {
+    width: 24em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .5em;
+}
+#data span {
+    padding-left: .25em;
+}
+#buttons {
+    margin-bottom: .70em;
+    float:left;
+}
+br {
+    clear: left;
+}
+
+body {font-family: arial;}
+        h3 {  
+         font-family: arial; 
+         margin-left: 10px; }
+       
+header {  
+        height: 30px;
+        margin-top: 5px;  
+        text-align: center;   
+        margin-bottom: 10px;
+        border: solid thin black;
+        background-color: #e5dfec; } 
+.nav {  
+        overflow: visible;
+        margin-left: 25px;
+        margin-right: 30px;
+        text-align: center; 
+        background-color: #fabf8f; 
+   }  
+#error {
+    color: red;
+    font-weight: bold;
+}
