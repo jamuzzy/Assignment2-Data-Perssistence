@@ -1,22 +1,17 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <?php //include 'men.inc'  ?>
 <?php
-echo "<br>";
-$dsn = "mysql:host=localhost;dbname=college";
-$username = "root";
-$password = "secret";
-try{
-	$connect = new PDO($dsn, $username, $password);
-	echo "<center>Connection successful.";
-}catch(PDOException $ex){
-	echo "Error Occured: " . $ex->getMessage();
-}
 echo "
 <main>
+<div class='topnav'>
+    <a href='Home.html'>Home</a></li>
+    <a href='signup.htm'>Sign up</a></li>
+    <a href='contact.htm'>Contact Us </a></li>
+</div>
 <h1>Students Marks </h1>
 <form action='Student_Marks.php' method='POST'>
      <p>
@@ -26,8 +21,17 @@ echo "
 		</select>
 	</p>
 	<p><input type='submit' name='submit' value='Show Marks'></p>
-</form>
+</form><br>
 ";
+$dsn = "mysql:host=localhost;dbname=college";
+$username = "root";
+$password = "secret";
+try{
+	$connect = new PDO($dsn, $username, $password);
+	echo "<center>Connection successful.";
+}catch(PDOException $ex){
+	echo "Error Occured: " . $ex->getMessage();
+}
 if(isset($_POST["submit"])){
 	if($_POST["selection"] == "all"){
 		$rows = $connect->query("SELECT * FROM student;");
@@ -64,8 +68,9 @@ if(isset($_POST["submit"])){
 		      </tr>";
 		}
 	echo "</table>
-  </main>";
+</main>";
 }
+
 ?>
 </body>
   <!--iframe src="task2.txt" height="400" width="1200">   Your browser does not support iframes. </iframe -->
